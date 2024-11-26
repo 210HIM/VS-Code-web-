@@ -10,8 +10,10 @@ while True:
     # Display the resulting frame
     cv2.imshow('Live Camera Feed', frame)
 
-    # Break the loop on 'q' key press
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    # Break the loop on 'q' key press 
+    # cureant speed is not enuf to play large video that reasun 
+    #@Himanshu-up speed of file 1 to 3
+    if cv2.waitKey(3) & 0xFF == ord('q'):
         break
 
 # Release the camera and close all OpenCV windows
